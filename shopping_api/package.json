@@ -1,0 +1,31 @@
+{
+  "name": "shopping_api",
+  "version": "1.0.0",
+  "description": "Node Assignment Shopping Api Demo",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikas2809/e-cartWithNode.git"
+  },
+  "keywords": [
+    "Node",
+    "Shopping",
+    "Backend",
+    "Api"
+  ],
+  "author": "Vikas Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikas2809/e-cartWithNode/issues"
+  },
+  "homepage": "https://github.com/vikas2809/e-cartWithNode#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mongoose": "^4.12.2"
+  }
+}

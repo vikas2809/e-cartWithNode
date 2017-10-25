@@ -1,0 +1,45 @@
+<div style="margin-top:100px;margin-left:35%;margin-bottom:100px;">
+  <h1 style="margin-left:18%;">Signup</h1>
+  <div style="margin-top:50px;margin-bottom:50px;">
+  <form name="RegForm" (ngSubmit)="myNgForm.resetForm()" #myNgForm="ngForm">
+    First Name:<br>
+    <input type="text" name="first_name" placeholder="Enter first name" [(ngModel)]="firstName" required autofocus/><br>
+    Last name:<br>
+    <input type="text" name="last_name" placeholder="Enter last name" [(ngModel)]="lastName" required/><br>
+    Password:<br>
+    <input type="password" name="password" placeholder="Enter password" [(ngModel)]="password" required/><br>
+
+    Phone Number:<br>
+    <input type="tel" name="phoneNumber" placeholder="Enter phone number" [(ngModel)]="phone_number" required/><br>
+    Email:<br>
+    <input type="email" name="emailAddress" placeholder="Enter your email-id" [(ngModel)]="email" required/><br>
+
+    Gender:<br>
+    <label class="radio-inline">
+        <input type="radio" name="optradio" [(ngModel)]="gender" value="Male"><p style="margin-left:20px;">Male</p>
+      </label>
+      <label class="radio-inline" style="margin-left:150px;">
+        <input type="radio" name="optradio" [(ngModel)]="gender" value="Female"><p style="margin-left:20px;">Female</p>
+
+      </label>
+      <br>
+
+    Pincode:<br>
+    <input type="text" name="pincode" [(ngModel)]="pincode" placeholder="Enter pin code" required/><br>
+
+    Contact Address:<br>
+    <textarea class="text" name="user_address" [(ngModel)]="address" rows="5" cols="32" required>
+    </textarea><br><br>
+
+    <div>
+
+    </div>
+    <input style="margin-left:12%;" type="submit" value="submit" (click)="onSubmit(firstName,lastName,password,phone_number,email,gender,pincode,address)"/>
+    <!--<input type="button" value="reset" onclick="clear()"/>-->
+    <!-- <button>clear</button>	 -->
+
+    </form>
+    <h2 style="margin-left:-50%;"><a [routerLink]="['/login']">{{ message }}</a></h2>
+    <h2 style="margin-left:-50%;color:#336BFF;" *ngIf="!status">{{ userExists }}</h2>
+  </div>
+</div>

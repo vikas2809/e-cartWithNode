@@ -1,0 +1,67 @@
+    <!-- <h3 style="margin-top:100px;text-align:center;color:blue;">{{welcome}}</h3> -->
+<!-- <div style="margin-top:100px;" *ngIf="isDataLoaded"> -->
+    <div *ngFor="let user of userInfo" style="float:right;margin-bottom:50px;">
+        <span style="margin-left:5px;color:#6C8FF0;font-weight:bold;font-size:20px;">Welcome {{user.firstName}}</span><span style="margin-left:5px;color:#6C8FF0;font-weight:bold;font-size:20px;margin-right:20px;">{{user.lastName}}</span>
+        <a [routerLink]="['/profile',{user_email:user.email}]">
+          <span class="glyphicon glyphicon-user fa-2x"></span>
+        </a>
+  </div>
+    <div class="container">
+    <div id="first">
+        <div class="floating-box" *ngFor="let product of productInfoList">
+            <p><b style="color:#BBCAF3;font-weight:bold;font-size:20px;">{{product.product_name}}</b></p>
+            <img src={{product.img_url}}><br>
+              <p><b style="font-size:15px;">${{product.product_price}}</b></p>
+              <div style="text-align:center;margin-left:10px;margin-bottom:30px;">
+               <label style="float:left;margin-top:20px;"> Qty:</label>
+                <input style="width:15%;margin-top:20px;margin-left:-25%;" #quantity value="1" type="number" min="0">
+                <!-- <select style="width:15%;margin-top:20px;margin-left:-25%;">
+                  <option value="0" selected >0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select> -->
+              <button #cart style="float:right;margin-top:10px;margin-right:10px;" type="button" class="btn btn-info btn-lg" (click)="addToCart(product.img_url,product.product_name,product.product_price,quantity.value,product.product_id)">
+                  <span class="glyphicon glyphicon-shopping-cart"></span> Add Cart
+                </button>
+            </div>
+          </div>
+    </div>
+  <div id="second" *ngIf="show">
+    <p style="text-align:left;font-weight:bold;color:#3762D6">Your Shopping Cart</p>
+    <!-- <div style="margin-top: 20px;">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/51JvGtd-PdL._SY300_.jpg" style="height:200px;width:200px;">
+  </div> -->
+
+  <table>
+      <tr>
+        <!-- <th>
+          Description
+        </th>
+        <th>
+          Price
+        </th>
+        <th>
+          Quantity
+        </th>
+        <th>
+          Amount
+        </th> -->
+      </tr>
+      <tr *ngFor="let cart_item of productCart">
+        <td><img src={{cart_item.product_img}} style="height:50px;width:50px;"></td>
+        <td><b>{{cart_item.product_name}}</b></td>
+        <td><b>{{cart_item.product_quantity}}</b></td>
+        <td><b>{{cart_item.product_price}}</b></td>
+      </tr>
+      <!-- <tr style="height:500px;">
+          <button type="button" class="btn btn-success" *ngIf="enable"></button>
+      </tr>    -->
+    </table>
+    <button style="height:30px;width:100%;" type="button" class="btn btn-success" *ngIf="enable" (click)="onCheckOut()">Checkout ${{amount}}</button>
+</div>
+
+</div>
+<!-- </div> -->

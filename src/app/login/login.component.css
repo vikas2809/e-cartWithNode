@@ -1,0 +1,46 @@
+.div{
+    margin-top:150px;
+    margin-left:35%;
+}
+.social_div{
+    margin-top: 50px;
+    margin-left: 35%;
+    margin-bottom: 100px;
+    width: 26%;
+}
+h1{
+  margin-left: 40px;
+}
+.user{
+    margin-top: -20px;
+    color: green;
+    text-align: left;
+    margin-left: 10%;
+}
+input{
+    width: 40%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=button]{
+    background-color: #336BFF;
+    color: white;
+    padding: 14px 20px;
+    /* margin: 8px 0; */
+    border: none;
+    cursor: pointer;
+    width: 40%;
+}
+button{
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    /* margin: 8px 0; */
+    /* text-align: center; */
+     margin-left: 8%; 
+    border: none;
+    cursor: pointer;
+    width: 25%;
+}

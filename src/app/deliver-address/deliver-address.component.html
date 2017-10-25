@@ -1,0 +1,62 @@
+<div class="row" style="margin-top:100px;">
+    <div class="col-md-4 col-md-offset-4">
+      <form class="form-horizontal" role="form">
+        <fieldset>
+
+          <!-- Form Name -->
+          <legend>Address Details</legend>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Line 1</label>
+            <div class="col-sm-10">
+              <input type="text" placeholder="Address Line 1" [ngModelOptions]="{standalone: true}" [(ngModel)]="address" class="form-control">
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">City</label>
+            <div class="col-sm-10">
+              <input type="text" placeholder="City" [ngModelOptions]="{standalone: true}" [(ngModel)]="city" class="form-control">
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">State</label>
+            <div class="col-sm-4">
+              <input type="text" placeholder="State" [ngModelOptions]="{standalone: true}" [(ngModel)]="state" class="form-control">
+            </div>
+
+            <label class="col-sm-2 control-label" for="textinput">Pincode</label>
+            <div class="col-sm-4">
+              <input type="text" placeholder="Pin Code" [ngModelOptions]="{standalone: true}" [(ngModel)]="pincode" class="form-control">
+            </div>
+          </div>
+
+
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Country</label>
+            <div class="col-sm-10">
+              <input type="text" placeholder="Country" [ngModelOptions]="{standalone: true}" [(ngModel)]="country" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="pull-right">
+                <button type="submit" class="btn btn-default" (click)="back()">Back</button>
+                <button type="submit" class="btn btn-primary" (click)="update(address,city,state,pincode,country)">Update</button>
+              </div>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+      <h3 style="text-align:center;">{{err_msg}}</h3>
+    </div><!-- /.col-lg-12 -->
+    
+</div><!-- /.row -->

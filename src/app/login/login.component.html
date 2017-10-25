@@ -1,0 +1,32 @@
+<div class="div">
+  <h1>Login in to E-Cart</h1>
+    <form>
+      <h1>{{title}}</h1><br>
+    Email:<br>
+    <input type="text" name="email" [(ngModel)]="entered_email" required>
+    <br>
+    Password:<br>
+    <input type="password" name="password" [(ngModel)]="entered_password" required>
+      <!-- Name:<br>
+      <input type="text" name="name" [(ngModel)]={{userName}} required>-->
+    <br><br>
+    <input type="button" value="Login" (click)="onAuthentication(entered_email,entered_password)">
+    <br><br><br>
+  </form>
+  <br>
+  <h2 class="user">{{ user }}</h2>
+  <h2 style="margin-left:-60%;"><a [routerLink]="['/signup']">{{ note }}</a></h2>
+</div>
+<div class="social_div">
+    <a class="btn btn-block btn-social btn-facebook" (click)="facebookLogin()">
+        <span class="fa fa-facebook"></span>Sign in with Facebook
+      </a><br>
+      <a class="btn btn-block btn-social btn-google" #login>
+          <span class="fa fa-google"></span> Sign in with Google
+
+        </a><br>
+        <!-- <button class="fa fa-google" (click)="google()" >Sign in with Google</button> -->
+      <!--  <a class="btn btn-block btn-social btn-twitter" >
+            <span class="fa fa-twitter"></span> Sign in with Twitter
+          </a><br> -->
+</div>

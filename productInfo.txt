@@ -1,0 +1,130 @@
+{
+	{
+		"product_id": 1,
+        	"img_url":    "http://demo.ajax-cart.com/var/photo/product/2000x4000/4/176/4.jpg",
+        	"product_name": "Boat Headphones Class-2",
+        	"product_brand": "Boat",
+        	"product_type": "Mobile Accessories",
+        	"product_price": 2000,
+        	"created_at":	"",
+        	"updated_at":	""
+	},
+	{
+		"product_id": 2,
+        	"img_url":    "https://community.uservoice.com/wp-content/uploads/iterative-product-development-800x533.jpg",
+        	"product_name": "Led Lights Diff Set",
+        	"product_brand": "Philips",
+        	"product_type": "Lighting and Decorations",
+        	"product_price": 5000,
+        	"created_at":	"",
+        	"updated_at":	""
+	},
+	{
+		"product_id": 3,
+        	"img_url":    "https://community.uservoice.com/wp-content/uploads/prevent-technical-debt-800x533.jpg",
+        	"product_name": "Typerighter With CD driver Customize",
+        	"product_brand": "Customize And Innovation",
+        	"product_type": "Computer Peripherals",
+        	"product_price": 6100,
+        	"created_at":	"",
+        	"updated_at":	""
+	},
+	{
+		"product_id": 4,
+        	"img_url":    "http://www.mamiyaleaf.com/assets/slider/product/product_slider_heinz_baumann.jpg",
+        	"product_name": "Poeme",
+        	"product_brand": "Lancome Paris",
+        	"product_type": "Pefume and Deodrands",
+        	"product_price": 2000,
+        	"created_at":	"",
+        	"updated_at":	""
+	},
+	{
+		"product_id": 5,
+        	"img_url":    "http://coreyko.fatcow.com/OC/wp-content/uploads/2013/10/CONSUMER-PRODUCTS.jpg",
+        	"product_name": "Set Consumer Daily Use",
+        	"product_brand": "Consumer daily use",
+        	"product_type": "Food Items and Groceries",
+        	"product_price": 10000,
+        	"created_at":	"",
+        	"updated_at":	""
+	},
+	{
+		"product_id": 6,
+        	"img_url":    "http://im.rediff.com/money/2010/mar/08product1.jpg",
+        	"product_name": "Folded Laptop+Tablets",
+        	"product_brand": "Future Innovate",
+        	"product_type": "Computer",
+        	"product_price": 2000,
+        	"created_at":	"",
+        	"updated_at":	""
+	},
+	{
+		"product_id": 7,
+        	"img_url":    "https://www.sammobile.com/wp-content/uploads/2012/08/Samsung-ATIV-Tab-Product-Image-5.jpg",
+        	"product_name": "Samsung Window-10 Tablets",
+        	"product_brand": "Samsung",
+        	"product_type": "Tablets",
+        	"product_price": 10000,
+        	"created_at":	"",
+        	"updated_at":	""
+	},
+	{
+		"product_id": 8,
+        	"img_url":    "http://www.productphotographymanila.com/images/product_photography_manila_16.jpg",
+        	"product_name": "Heineken Imported Drinks",
+        	"product_brand": "Heineken",
+        	"product_type": "Drinks and Beverages",
+        	"product_price": 500,
+        	"created_at":	"",
+        	"updated_at":	""
+	},
+	{
+		"product_id": 9,
+        	"img_url":    "https://cgimg.s3.amazonaws.com/t/g29/520829/1253826_87141_large.jpg",
+        	"product_name": "Artanis 100BIC With Gear",
+        	"product_brand": "Bicycle",
+        	"product_type": "Transport",
+        	"product_price": 6000,
+        	"created_at":	"",
+        	"updated_at":	""
+	},
+	{
+		"product_id": 10,
+        	"img_url":    "https://images-na.ssl-images-amazon.com/images/I/71ZhZ6C-YnL._SL1000_.jpg",
+        	"product_name": "Echo 1003",
+        	"product_brand": "Echo",
+        	"product_type": "Speaker",
+        	"product_price": 4200,
+        	"created_at":	"",
+        	"updated_at":	""
+	}
+}
+
+
+
+
+
+{
+	"userId": 101,
+        "firstName": "John",
+        "lastName": "Doe",
+        "password": "john@doe",
+        "phone_number": 9654321625,
+        "email": "john.doe@gmail.com",
+        "gender": "male",
+        "pincode": 110255,
+        "address": "America",
+        "created_at": "",
+        "updated_at": ""
+}
+
+
+
+
+
+
+
+
+
+

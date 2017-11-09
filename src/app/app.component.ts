@@ -18,5 +18,9 @@ export class AppComponent implements OnInit{
   ngOnInit() {
   //  this.shoppingInfoService.logout=false;
   }
-  
+  logout()
+  {
+    console.log("inside logout");
+    this.shoppingInfoService.userLogout();
+  }
 }

@@ -1,11 +1,14 @@
-    <!-- <h3 style="margin-top:100px;text-align:center;color:blue;">{{welcome}}</h3> -->
+<!-- <h3 style="margin-top:100px;text-align:center;color:blue;">{{welcome}}</h3> -->
 <!-- <div style="margin-top:100px;" *ngIf="isDataLoaded"> -->
     <div *ngFor="let user of userInfo" style="float:right;margin-bottom:50px;">
         <span style="margin-left:5px;color:#6C8FF0;font-weight:bold;font-size:20px;">Welcome {{user.firstName}}</span><span style="margin-left:5px;color:#6C8FF0;font-weight:bold;font-size:20px;margin-right:20px;">{{user.lastName}}</span>
         <a [routerLink]="['/profile',{user_email:user.email}]">
           <span class="glyphicon glyphicon-user fa-2x"></span>
         </a>
+        <!-- <p>Hello</p>
+        <app-side-menu></app-side-menu> -->
   </div>
+
     <div class="container">
     <div id="first">
         <div class="floating-box" *ngFor="let product of productInfoList">

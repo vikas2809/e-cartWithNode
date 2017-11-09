@@ -9,6 +9,10 @@ var userController=require('../controllers/userController');
 //importing the productController
 var productController=require('../controllers/productController');
 
+//importing thr cartController
+var cartController=require('../controllers/cartController');
+
+
 router.route('/v1/user/create')
       .post(userController.postUserDetails);
 
@@ -35,5 +39,11 @@ router.route('/v1/product/upload').post(productController.postProductDetails);
 
 //getting all data from the product collections
 router.route('/v1/getAllProduct').get(productController.getAllProductDetails);
+
+//posting the cart details into the database
+router.route('/v1/cart/update').post(cartController.postCartDetails);
+
+//get the all info of the user cart details
+router.route('/v1/cart/getAllCartDetails').get(cartController.getAllCartInfo);
 
 module.exports=router;

@@ -93,6 +93,7 @@ private scope = [
         that.google_user={
           firstName,lastName,email,created_at,updated_at
         };
+        localStorage.setItem('login','googleLogin');
            that.shoppingInfoService.addUser(that.google_user);
         that.router.navigate(['\dashboard',{emailId:that.user_detail.email,id:that.user_detail.id,name:that.user_detail.name,imageUrl:that.user_detail.imageUrl}]);
         // that.router.navigate(['\dashboard']);
@@ -138,6 +139,7 @@ me(userId, accessToken) {
                firstName,lastName,email,gender,created_at,updated_at
              };
             if (result && !result.error) {
+              localStorage.setItem('login','facebookLogin');
                 this.shoppingInfoService.addUser(this.facebook_user);
                this.router.navigate(['\dashboard',{emailId:this.user_detail.email,id:this.user_detail.id,name:this.user_detail.name,imageUrl:this.user_detail.imageUrl}]);
 }
@@ -172,6 +174,9 @@ me(userId, accessToken) {
       console.log(this.validUser);
       if(this.validUser.length>0)
       {
+        this.shoppingInfoService.token=true;
+        localStorage.setItem('userLogin',JSON.stringify(this.shoppingInfoService.token));
+        localStorage.setItem('login','userLogin');
         this.router.navigate(['\dashboard',{emailId:entered_email}]);
       }
       if(this.validUser.length<=0)

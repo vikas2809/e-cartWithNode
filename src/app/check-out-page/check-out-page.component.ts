@@ -11,14 +11,15 @@ declare var FB:any;
 export class CheckOutPageComponent implements OnInit {
   user_email:String;
   final_cart:any=[];
-  total_bill:number;
+  total_amount:number;
+  updated_amount:any;
   constructor(private router:Router,private route:ActivatedRoute,private shoppingInfoService:ShoppingInfoService) {
     this.shoppingInfoService.logout=true;
     this.route.params.subscribe(params => {
       this.user_email = params['emailId'];
-      this.total_bill= +params['checkout_amount'];
+      this.total_amount= +params['checkout_amount'];
     });
-    console.log(this.total_bill);
+    console.log(this.total_amount);
     console.log(this.user_email);
 }
 
@@ -46,6 +47,12 @@ export class CheckOutPageComponent implements OnInit {
   	    })
 	     }
 	    })
+  }
+  onCheckout(total_amount)
+  {
+    console.log(total_amount);
+    this.updated_amount={total_amount};
+    this.shoppingInfoService.updateUserShoppingAmount(this.user_email,this.updated_amount);
   }
   ngOnDestroy() {
     this.shoppingInfoService.logout=false;

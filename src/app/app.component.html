@@ -10,7 +10,8 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav navbar-right">
-            <li><a routerLink="login">  <button type="button" class="btn btn-primary" *ngIf="shoppingInfoService.logout">Logout</button></a></li>
+            <!-- <li><a routerLink="login">  <button type="button" class="btn btn-primary" *ngIf="shoppingInfoService.logout">Logout</button></a></li> -->
+            <li><button type="button" class="btn btn-primary" *ngIf="shoppingInfoService.logout" (click)="logout()">Logout</button></li>
             <li><a routerLink="login">  <button type="button" class="btn btn-primary" *ngIf="shoppingInfoService.login">Login</button></a></li>
             <li><a routerLink="signup">  <button type="button" class="btn btn-primary" *ngIf="shoppingInfoService.signup">Signup</button></a></li>
           </ul>
@@ -18,5 +19,4 @@
       </div>
     </div>
     <!-- <app-login></app-login> -->
-       <router-outlet></router-outlet>  
-  
+       <router-outlet></router-outlet>

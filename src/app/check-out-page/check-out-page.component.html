@@ -72,10 +72,10 @@
           <div class="panel-footer">
             <div class="row text-center">
               <div class="col-xs-9">
-                <h4 class="text-right">Total <strong>${{total_bill}}</strong></h4>
+                <h4 class="text-right">Total <strong>${{total_amount}}</strong></h4>
               </div>
               <div class="col-xs-3">
-                <button type="button" class="btn btn-success btn-block">
+                <button type="button" class="btn btn-success btn-block" (click)="onCheckout(total_amount)">
                   Checkout
                 </button>
               </div>
@@ -92,14 +92,14 @@
       onclick="$(this).fadeOut(); $('#payInfo').fadeIn();">Continue
 to Billing Information»</a></div> -->
 
-<div style="text-align:center;margin-left:7%;">
+<!-- <div style="text-align:center;margin-left:7%;">
   <button style="" type="button" class="btn btn-primary" (click)="logout()">
     fb logout
   </button>
   <button style="" type="button" class="btn btn-primary">
     google logout
   </button>
-</div>
+</div> -->
 
 <div style="margin-top:50px;margin-bottom:50px;">
   <button class="btn btn-success" style="height:40px;width:66%;" (click)="deliverAddress()">Deliver to This Address</button>

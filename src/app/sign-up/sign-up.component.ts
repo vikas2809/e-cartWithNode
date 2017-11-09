@@ -15,7 +15,7 @@ export class SignUpComponent implements OnInit {
   errorMessage:String;
   status:boolean;
   validUser:any=[];
-  constructor(private router:Router,private shoppingInfoService:ShoppingInfoService) { 
+  constructor(private router:Router,private shoppingInfoService:ShoppingInfoService) {
     this.shoppingInfoService.getAllUser().subscribe(
       userInfo => this.userInfo=userInfo,
       error => this.errorMessage =<any>error
@@ -50,7 +50,8 @@ export class SignUpComponent implements OnInit {
         // this.user="Invalid User";
         // this.note="Not a Member Yet???Please signup!!!";
         this.shoppingInfoService.addUser(this.user);
-        this.message="Signup Successfullly!!!Please Login to continue!!!";
+      //  this.message="Signup Successfullly!!!Please Login to continue!!!";
+        this.router.navigate(['\login']);
       }
     }
     else
@@ -61,7 +62,7 @@ export class SignUpComponent implements OnInit {
 
       // this.shoppingInfoService.addUser(this.user);
       // this.message="Signup Successfullly!!!Please Login to continue!!!"
-  
+
   }
   ngOnDestroy() {
     this.shoppingInfoService.login=false;

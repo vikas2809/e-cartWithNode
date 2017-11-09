@@ -2,7 +2,7 @@
 var express=require('express');
 var mongoose=require('mongoose');
 var body_parser=require('body-parser');
-// var cors=require('cors');
+//  var cors=require('cors');
 
 //connecting to the mongodb database
 mongoose.connect('mongodb://localhost:27017/shoppingCart');
@@ -15,7 +15,7 @@ main.set('env',process.env.NODE_ENV || 'production');
 main.use(body_parser.urlencoded({ extended : true}));
 
 main.use(body_parser.json());
-//  main.use(cors);
+//   main.use(cors);
 // console.log(cors);
 routes=require('./routes/routes');
 main.use('/api',routes);

@@ -12,6 +12,7 @@ import { ProductShoppingComponent } from './product-shopping/product-shopping.co
 import { CheckOutPageComponent } from './check-out-page/check-out-page.component';
 import { DeliverAddressComponent } from './deliver-address/deliver-address.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { SideMenuComponent } from './side-menu/side-menu.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     ProductShoppingComponent,
     CheckOutPageComponent,
     DeliverAddressComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    SideMenuComponent
   ],
   imports: [
     BrowserModule,

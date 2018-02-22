@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
  welcome:String='Welcome ';
  //user:any={};
  user_detail:any={};
-private clientId:string = '1013929086109-d3227q1h4kpijpbf7mbtuhggbb9g8k2u.apps.googleusercontent.com';
+private clientId:string = 'client-id';
 private scope = [
     'profile',
     'email',
@@ -44,7 +44,7 @@ private scope = [
      this.googleInit();
     console.log(this.name);
     FB.init({
-          appId: '124926898206811',
+          appId: 'app-id',
           cookie: false,
           xfbml: true,
           version: 'v2.8'
